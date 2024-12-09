@@ -1,0 +1,105 @@
+"""
+Geeks for geeks python course.
+To print something on the console, print() function is used.
+This function also adds a newline after our message is printed.
+python programs are interpreted.
+Arithmetic operations in python can be
+performed by using arithmetic operators
+and some of the in-built functions.
+
+"""
+# Variables in python
+a = 3
+A = 4
+print(a)
+print(A)
+b = 5
+# Expression in python
+# expression is the combination of values variables and operators and function calls that evaluates to a single value.
+c = a + b
+print(c)
+# Condition in python
+# They are used to control the flow of the program
+#if condition:
+    # Code to execute if condition is true
+# The else clause
+#if condition:
+    # Code if condition is true
+#else:
+    # Code if condition is false
+# The elif condition.
+# if condition1:
+#     # Code if condition1 is true
+# elif condition2:
+#     # Code if condition2 is true
+# else:
+#     # Code if none of the conditions are true
+
+
+# Function
+# declared by the keyword def
+
+# Python datatypes
+"""
+Data types are the classification of data items.
+Numeric
+Data that has a numeric data value.
+They can be integer, float and complex numbers.
+Sequence Type
+In python sequence is the ordered collection of similar or different data types.
+They can be String, List and Tuple
+String = A collection of one or more characters.we can put it in a single double or triple quotes.
+List = an ordered collection of data.
+Tuple = is just like lists tuples cannot be modified after created that is the main difference between list and tuples.
+Boolean
+have 2 values True and False
+Set
+unordered collection of data types that is iterable
+, mutable, and has no duplicate elements.
+
+Dictionary =  an unordered collection of data values, 
+used to store data values like a map,
+which unlike other Data Types that hold only single value as an element.
+dictionary hold key and value.
+
+type() this used to determine the type of datatype.
+
+
+"""
+d = 5
+print(type(d))
+D = 4.6
+print(type(D))
+F = 3j + 4
+print(type(F))
+s = 'Hey everybody '
+print(s)
+# Accessing strings using indexing
+G ="Geeks for geeks"
+print(G[2])
+# Creating list
+List =["GeeksForGeeks"]
+print(List)
+# Accessing the elements of the list
+Li =["Geeks","for","Geeks"]
+print(Li[0])
+# Tuples
+Tuple = ("Geeks","For")
+print(tuple)
+list1 = [1,2,3,4,6]
+print(tuple(list1))
+# We can access the elements of the tuple using index.
+
+# Creating Set
+set1 = set("Geeks for geeks")
+print(set1)
+# Elements of the set accessed by for loop
+for i in set1:
+
+    print(i, end =" ")
+# Creating dictionary
+Dict ={"name": "Lydia",
+       "age" : 21}
+print(Dict["name"])
+print(Dict.get(3))
+# Python operators
