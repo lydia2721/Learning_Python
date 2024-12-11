@@ -1,0 +1,22 @@
+# Python if else statement.
+"""
+Decision-making statement in programming is called
+If statement
+The most simple decision-making statement.
+if condition:
+   # Statements to execute if
+   # condition is true
+   python uses indentation to identify a block.
+   if(I<15):
+   if else
+
+
+"""
+i = 20
+if (i < 15):
+    print("i is smaller than 15")
+    print("i'm in if Block")
+else:
+    print("i is greater than 15")
+    print("i'm in else Block")
+print("i'm not in if and not in else Block")
