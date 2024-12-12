@@ -1,0 +1,153 @@
+"""
+Python-if-else.
+When we need to make some decision
+decision-making statement in programming decide the direction of the flow of program execution.
+In python if-else elif and statement for decision making.
+"""
+# If statement
+# if condition:
+   # Statements to execute if
+   # condition is true
+i = 24
+if (i > 15):
+    print("24 is greater than 15")
+print("I am not if statement")
+# If-else
+# If the condition of if is false we use else condition.
+if (i < 15):
+    print("i is smaller than 15")
+else:
+    print("No comparision")
+
+#: Python if else in list comprehension
+def digitSum(n):
+    dsum = 0
+    for ele in str(n):
+        dsum  += int(ele)
+    return dsum
+List = [367, 111, 562, 945, 6726, 873]
+newList = [digitSum(i) for i in List if i & 1]
+print(newList)
+# Nested if statement
+# if statement inside another if statement.
+if ( i  == 10):
+    if( i < 15):
+        print("i is smaller than 15")
+    else:
+        print("It is nothing")
+
+# If -elif-else -ladder
+# A user can decide among multiple options
+#if (condition):
+    #statement
+#elif (condition):
+  #  statement
+#else:
+   # statement
+i = 20
+if (i == 10):
+    print("i is 10")
+elif (i == 15):
+    print("i is 15")
+elif (i == 20):
+    print("i is 20")
+else:
+    print("i is not present")
+
+#    Loops
+# While loop
+# while expression:
+# statement(s)
+count = 0
+while(count < 3):
+    count = count + 1
+    print("Hello Geek")
+else:
+    print("That's nice")
+# Single statement while block:
+while (count == 0): print("Hello Geek")
+# for loop
+# For loop is used for sequential traversal.
+# like array or string or list.
+n = 4
+for i in range(0, n):
+    print(i)
+    # List iteration
+    l = ["geeks","for","geeks"]
+for i in l:
+    print(i)
+# Tuple iteration
+t = ("geeks", "for","geeks")
+for i in t:
+    print(i)
+
+# String iteration
+s ="Geeks"
+for i in s:
+    print(s)
+# dictionary iteration
+d = dict ()
+d['xyz'] =123
+d['abc'] = 345
+for i in d:
+    print(i,d[i])
+# Iterating by the index of sequences:
+#list =["geeks","for","geeks"]
+#for index in range(len(list)):
+    # print list[index]
+# When we use for loop with else element
+list = ["geeks", "for", "geeks"]
+#for index in range(len(list)):
+    #print list[index]
+#else:
+    # print "Inside Else Block"
+
+# Nested loops allow us to use one loop inside the other loop.
+for i in range(1,5):
+    for j in range(i):
+        print(i,end="")
+
+    print()
+# from that iterable i.e fruits
+fruits = ["apple", "orange", "kiwi"]
+iter_obj = iter(fruits)
+
+while True:
+  try:
+    # getting the next item
+    fruit = next(iter_obj)
+    print(fruit)
+  except StopIteration:
+
+    # if StopIteration is raised,
+    # break from loop
+    break
+#range() vs xrange() in python
+a = range(1,1000)
+# x = xrange(1,10000)
+# Using else conditional statement with for loop in python
+"""
+Control statement usage
+
+"""
+# continue statement
+for letter in "geeksforgeeks":
+    if letter == "e" or letter == "s":
+        continue
+
+    print("current letter  :{}".format(letter) )
+# Break statement
+# It bring control out of the loop
+#for letter in 'geeksforgeeks':
+    #if letter == 'e' or letter == 's':
+       # break
+#print 'Current Letter :', letter
+# Pass statement
+# used to write empty loops
+for letter in "geeksfor geeks":
+    pass
+print ("last letter:", letter)
+# How to print a list in reverse order (from last to first item) using while and for in loops.
+numbers = [1,3,5,6,7,9]
+for i in range(len(numbers)-1,-1,-1):
+    print(i)
