@@ -1,0 +1,33 @@
+# Function in python
+"""
+python function is a block of related statements designed to
+perform
+a computational
+logical and evaluative task.
+
+"""
+# Creating a function
+def fun():
+    print("Welcome to GFG")
+
+fun() # Example of calling function
+# Calling a function
+# Arguments of a function
+# Arguments are values passed inside the parenthesis of the function
+# Types of argument
+#   Default arguments
+"""
+A default argument is a parameter that assumes a default value 
+if a value is not provided in the function call for that argument.
+Keyword argumentThe idea is to allow the caller to specify the argument name with values.
+Variable -length arguments
+args(Non-keyword Arguments)
+kwargs(Keyword arguments)
+"""
+def myFun(*argv):
+
+	for arg in argv:
+		print(arg)
+
+
+myFun('Hello', 'Welcome', 'to', 'GeeksforGeeks')
