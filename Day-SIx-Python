@@ -1,0 +1,136 @@
+"""
+Docstring
+The first string after function is called docstring.
+Used to explain how we can use the function and classes.
+
+"""
+# The return statement
+# the return statement is used to exit from a function and go back to the caller and return the specified value or data.
+def square_value(num):
+    """ This function return the square of values"""
+    return num ** 2
+print(square_value(6))
+# In python every variable name is a reference.
+"""
+which means In Python, 
+when you assign a value to a variable,
+the variable does not contain the value directly. 
+Instead, it holds a reference (or pointer)
+to the memory location where the object resides
+"""
+# Anonymous functions
+# A function without a name.
+# lamda keyword is used to create this function
+def cube(x): return x*x*x
+cube_v2 = lambda x : x*x*x
+print(cube(7))
+print(cube_v2(7))
+# Python function with functions(Nested functions)
+def f1():
+    s = "I love GFG"
+    def f2():
+        print(s)
+    f2()
+f1()
+# pass statement
+# It is a null statement but like comments it is not ignored by the interpreter.
+def geekFunction():
+    pass
+# In empty class we can use pass statements.
+class geekClass:
+    pass
+li =['a', 'b', 'c', 'd']
+#for i in li:
+ #   if( i == a):
+  #      pass
+   # else:
+    #    print(i)
+
+# yield function
+"""
+used to return from the function without destroying the states od it's local variable.
+The execution starts from the last yield element.
+any function that contain a yield keyword is termed as generator.
+used to create generator function.
+
+"""
+def generate_squares(n):
+    for i in range(n):
+        yield i * i  # Yield the square of i one at a time
+
+# Calling the generator function
+squares_gen = generate_squares(5)
+
+# Iterating through the generator
+print("Generator Function Output:")
+for square in squares_gen:
+    print(square)  # Output: 0, 1, 4, 9, 16 (one per line)
+# Pyton modules
+
+"""
+file that contain python definition and statements.
+a module can define function class and variables.
+
+"""
+# Example
+def add(x,y):
+    return x + y
+def subtract(x,y):
+    return x -y
+# Import module in python ---import statement
+import modulefinder
+# Basic import statement
+import math
+result = math.sqrt(16) # USING A FUNCTION
+print(result)
+# Import specific function or variables
+from math import pi,sqrt # the from importing statement
+print(pi)
+# Importing all names from module
+from math import *
+print(sin(0))
+# : Directories List for Modules
+# we can rename module using as keyword.
+import math as gfg
+print(gfg.sqrt(16))
+# The dir() function
+# a sorted list of strings containing the names defined by a module.
+# The list contain the names of all modules variables and functions.
+import random
+print(dir(random))
+# Python classes
+# A class is a user-defined blueprint or prototype from which objects are created.
+# creating class
+#class Dogs:
+    # statement
+# creating object
+# obj = ClassName()
+#print(obj.atrr)
+"""
+Class creates a user-defined data structure,
+which holds its own data members and member functions,
+which can be accessed and used by creating an instance of that class.
+A class is like a blueprint for an object.
+1. Classes are created by keyword class.
+2. Attributes are the variables that belong to a class.
+3. Attributes are always public and can be accessed using the dot (.) operator.
+Eg.: Myclass.Myattribute
+object consists of
+Identity  = Name of the dog
+State/Attribute breed age color
+Behaviours  bark sleep and eat.
+Declaring Objects (Also called instantiating a class)
+"""
+# 
+class Dog:
+    attributeOne = "mammal"
+    attributeTwo = "dog"
+def fun(self):
+    print("I'm a", self.attributeOne)
+    print("I'm a", self.attributeTwo)
+Rodger = Dog() # Object declaration
+# The self
+
+    
+
+
