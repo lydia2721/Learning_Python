@@ -1,0 +1,107 @@
+"""
+Python classes
+The self
+class methods have an extra first parameter in the method definition.
+The --init--method
+
+"""
+#class Person:
+
+# def__init__(self,name):
+# self.name = name
+def say_hi(self):
+    print("Hello, my name is", self.name)
+
+
+# Class and instances Variables
+# Instance variable are for data.
+# Unique to each instance and class.
+class Dog:
+    # Class variable
+    animal = "dog"
+
+    # The init method or constructor
+    def __init__(self, breed, color):
+        self.breed = breed
+        self.color = color
+
+# Objects of Dog class
+Rodger = Dog("Pug", "Brown")
+Buzo = Dog("Bulldog", "Black")
+
+# Printing details of Rodger
+print("Rodger's details:")
+print("Rodger is a", Rodger.animal)
+print("Breed:", Rodger.breed)
+print("Color:", Rodger.color)
+ # Another example on instances
+class Car:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def display_info(self):
+        print(f"{self.year} {self.make} {self.model}")
+
+# Creating instances of the Car class
+car1 = Car("Toyota", "Camry", 2020)
+car2 = Car("Honda", "Accord", 2021)
+
+# Displaying information about each car
+print("Car 1 details:")
+car1.display_info()
+
+print("Car 2 details:")
+car2.display_info()
+# Garbage collection
+"""
+Python memory allocation and deallocation is automatic.
+
+"""
+# Python uses two methods for memory allocation
+# Reference counting garbage allocation
+# reference counting in python is used to reference counting for memory management.
+# Reference counting works by counting the number of times an object is referenced by other objects.
+# When reference to an object are removed the reference count for an object is decremented.
+# reference cycle involve list tuples instances classes and functions are common.
+# To create a reference cycle is to create an object which refers to itself as in the example.
+def create_cycle():
+    x = []
+    x.append(x)
+    create_cycle()
+# Ways to make an object eligible for garbage collection
+x = []
+x.append(1)
+x.append(2)
+del x
+x = None
+# Automatic garbage collection of cycles
+# importing the gc module and asking for garbage collection thresholds:
+import gc
+print("Garbage collection tresholds:")
+gc.get_threshold()
+# Manual garbage collection
+#There are two ways of collecting garbage manually
+#1. Time based = When the garbage is collected after fixed time.
+# 2. Event-based = when the user exit the application.
+
+# Lambda Function
+# This function is a function without name.
+# As def keyword lambda keyword is a also another keyword used to define anonymous function.
+# lambda arguments
+"""
+It can have any number of arguments but only one expression.
+lambda arguments: expression
+
+"""
+add_ten = lambda x: x + 10
+print(add_ten(5))  # Output: 15
+# lambda multiple expression
+multiply = lambda a, b: a * b
+print(multiply(5, 6))  # Output: 30
+# lambda with a map
+doubled = list(map(lambda x: x * 2, my_list))
+print(doubled)  # Output: [2, 4, 6, 8, 10]
+product_result = reduce(lambda x, y: x * y, numbers)
+print(product_result)  # Output: 120
