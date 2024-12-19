@@ -1,0 +1,92 @@
+# Python updated
+# Created by Guido van rossum.
+print("Hello Everyone")
+# In python comments are written in this form.
+# Comments are ignored by the interpreter.
+# Print(function is used to print something on the screen.
+# This print function also add newline after using it.
+# For its scope python uses identation.
+# Basics of python programming language
+# Python programs are interpreted and they are not compiled.
+print("Hello World")
+# Variables and data types in python
+# Every variable holds a value which is the information associated with that variable.
+message = "Hello Python world"
+print(message)
+message = "Hello Python crash course"
+print(message)
+# Variables need to be declared first in python.
+a = 3
+print(a)
+A = 90
+print(A)
+a = 6
+print(a)
+# Naming and using variable in python
+# Variable name can only contain letter and some special character like _ . They can start with letter and underscore but not with number.
+# Spaces are not allowed in variable naming.
+# Python keywords are not used like print.
+# Variable name should be short and descriptive.
+# It is better if we use lower case.
+# Exercise
+fruit = "apple"
+print(fruit)
+fruit = "orange"
+print(fruit)
+# Expression in python
+# Arithmetic operation in python can be performed by using arithmetic operations.
+
+
+# Strings
+# A string is simply a series of characters.
+# Anything inside a quote is considered as string.
+# They represent unicode characters.
+#  a character is a string length one.
+stringOne = "I'm geeks for Geeks student"
+print(stringOne)
+# Accesing elements of the string
+# we can access individual character using indexing .
+# we can use negative indexing in order to get back of the string.
+geeks = "Geeks For Geeks"
+print(geeks[-1])
+print(geeks[0])
+# Strings can be created using single double and triple quotes.
+# Changing case in a string
+# .title
+name = "lydia kebede"
+print(name.title())
+# A method is an action that a python perform in a piece of data.
+# Every method is followed by a set of parenthesis.
+print(name.upper())
+print(name.lower())
+# Combining or concatenating string
+first_name = "Lydia"
+last_name = "Kebede"
+full_name = first_name + " "+ last_name
+print(full_name)
+# To combin strings python uses +
+# This method of combining string is called concatenation
+print("Hello, "+ full_name.title() + " " + "!")
+# Adding Whitespace to Strings with Tabs or Newlines
+# White space refers to any non printing character such as spaces tabs and end of line.
+print("Python")
+print("\tPython")
+print("Languages:\n\tPython \n\tJavascript")
+# Stripping Whitespace
+one = "python"
+two = (" python " )
+# in order to decrease the amount of the white space python rstrip() method
+favourite_language = (" python ")
+print(favourite_language.rstrip())
+# Avoiding Syntax Errors with Strings
+# With string trying to use apostrophe in the middle when using single quotes may rise an error.
+# Exercise
+name = "Abebech"
+print("Hello " + name + " " + "would you like to learn some Python today?")
+print(name.title())
+print(name.upper())
+print(name.lower())
+print("Albert Einstein once said," '"A person who never made a mistake never tried anything new."')
+# Stripping Names
+name = ' haw '
+print(name.rstrip())
