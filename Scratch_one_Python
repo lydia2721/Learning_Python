@@ -1,0 +1,94 @@
+#  Variable in python
+# In python variables are used to store information.
+# They allow us to store modify and retrieve data throughout ou program.
+# Creating a variable
+age = 24
+name = "ch"
+height = 5.7
+# Python support various data types that can be assigned to variables.
+num = 56 # int
+number = 3.14 # float
+string = "name"
+booleans  = True
+listo = [1,2,3,4,] # Lists are ordered collections
+tuples = (1,2,3,6,7) # immutable ordered list.
+dictionaries = "contain key and value"
+dc_one = {
+    "name": "Lydia",
+    age: 30,
+    height:7
+
+} # key value pairs are defined in python using dictionaries.
+sets = {1,2,3,4,5} # Unordered collections
+# Multiple assignments
+x,y,z = 40,50,60
+a=b=c= 20
+# Variable Naming rules
+# It must start with the letter or underscore
+# Can contain letter number and underscore
+# Cannot start with the number
+#case sensitive Fruit and fruits are not the  same.
+my_variable =45
+second_variable =10
+# Variable scope
+# Local scope = variables defined in a function is called local.
+# Global scope = variables defined outside any function is called global scope.
+#Built in Scope
+#Names that are pre assigned in python is called built in scope like len and print.
+u = "Global scope"
+def my_function():
+    y = "local scope"
+    print(" This will print inside the function ")
+my_function()
+print("Outside the function:" )
+
+# Exercise on variables
+num_items = 21
+price_per = 56.4
+item_name = "apple"
+total_cost = num_items * price_per
+print(total_cost)
+print(f"Number of items  {num_items}  And the price per item is {price_per}  The item name is {item_name}  Based on this data the total cost is {total_cost}" )
+# Operators in python
+# They perform operations on variables and values.
+# Arithmetic  Operators
+a = 45
+b = 6
+print(a + b) # Addition
+print(a-b)
+print(a*b)
+print(a/b)
+print(a//b)
+print(a%b)
+print(a**b)
+# Assignment Operators
+a = 5
+a += 2 # a = a + 2
+print(a)
+# Comparison operator
+# Mainly used to work on booleans.
+
+c = a == b # Equual to
+print(c)
+c = a!=b
+print(c)
+c = a > b
+print(c)
+c = a < b
+print(c)
+c = a <= b
+print(c)
+c = a >= b
+print(c)
+# Logical operators
+f = 67
+t = 45
+print((f > t) and (t == f))
+print((f < t) or  (t >= f))
+print(not((f > t) and (t == f)) )
+#Bitwise Operators
+# this operators are used to perform operation on binary operations
+print(f & t)  # Binary And
+print( f | t) # Binary or
+print( f ^ t) # Binary XOR
+# ~ bitwise not
