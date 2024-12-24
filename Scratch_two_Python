@@ -1,0 +1,140 @@
+#Bitwise operation
+# This operation performed on binary representation.
+# Control flow statement
+# The if statement
+# This statement evaluate boolean expression.
+ # if condition:
+x = 10
+if x < 5:
+     print("The statement is false")
+else:
+    print("It is nothing")
+# The else statement
+# We use this if the if statement is false we use else statement.
+# Elif statement is used to check multiple conditions.
+# Exercise
+age = int(input("Enter age"))
+if age < 13:
+    print("You are a child")
+elif (age >= 13) and (age <= 19):
+    print("You are a teenager")
+elif(age >= 20) and (age <= 64):
+    print("You are an adult")
+else:
+    print("You are senior citizen")
+# Loops
+# For loop
+# For loop is used to iterate over a sequence
+# Like list tuples and dictionary.
+# Iterating Over a list
+clothes = ["Pants", "t-shirts", "shorts"]
+for cloth in clothes:
+    print(cloth)
+# Iterating over tuples
+fruits = ("apple","strawberry", "banana")
+for fruit in fruits:
+    print(fruit)
+# To iterate over dictionary
+dict = {
+    "a": 1,
+    "b":2,
+    "c":3
+
+}
+for key in dict:
+    print(key)
+# Using range() function
+for i in range(4):
+    print(i)
+# We can also specify start stop and step values
+for i in range(1,10,2):
+    print(i)
+# While loops
+count = 0
+while count < 5:
+    print(count)
+    count +=1
+# Control statements
+# Break terminate the loop prematurely
+# Continue skip the current iteration and moves to the next one.
+for number in range(10):
+    if number == 5:
+        break  # Exit the loop when number is 5
+    print(number)
+for number in range(10):
+    if number % 2 == 0:
+        continue  # Skip even numbers
+    print(number)
+# Nested loop
+for i in range(2):
+    for j in range(3):
+        print(f"i={i}, j={j}")
+
+for i in range(1,11):
+    print(f" The number is{i}")
+height = int(input("Enter the height of the triangle"))
+for i in range(1,height+1):
+    for j in range(i):
+        print("*" , end=" ")
+    print()
+#  Exercise on nested loop
+high = int(input("Enter the height of the pyramid"))
+for i in range(1,high + 1):
+    print(" " * (height -i), end=" ")
+    for j in range(1, i + 1):
+
+        print(j, end="")
+    print()
+# Another exercise on nested loop
+size = 10
+for i in range(1,size+1):
+    for j in range(1,size + 1):
+        product = i * j
+        print(f"{product:4}", end="")
+    print()
+    # Functions
+def function_name(parameter):
+    """ It explain what the function can perform.By using this three quotes we can explain the work of the function."""
+
+    # Built in function
+my_list = [1, 2, 3]
+print(len(my_list))  # Output: 3
+#user defined function\
+def add_numbers(a, b):
+    return a + b
+
+result = add_numbers(3, 5)
+print(result)  # Output: 8
+# Function with default parameter
+def greet(name="Guest"):
+    print(f"Hello, {name}!")
+
+greet()          # Output: Hello, Guest!
+greet("Alice")  # Output: Hello, Alice!
+#  Functions with Variable-length Arguments
+# Used to give an arbitary amount of parameter.
+
+def sum_all(*args):
+    return sum(args)
+
+result = sum_all(1, 2, 3, 4)
+print(result)  # Output: 10
+def greet(name):
+    print(f"Hello,{name}!")
+greet("Lydia")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
