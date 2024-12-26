@@ -1,0 +1,97 @@
+# Lists
+# A list is modifiable collection in python
+# Creating a list
+my_list = [1,2,3,4,"apple","True"]
+# Accessing elements
+print(my_list[2])
+print(my_list[1:4])
+# Modifying a list
+# Adding elemnts
+my_list.append(5)
+print(my_list)
+my_list.insert(1,100)
+print(my_list)
+# Removing elements
+my_list.remove(100)
+print(my_list)
+item = my_list.pop()
+print(item)
+print(my_list)
+# Updating elements
+my_list[3] = 50
+print(my_list)
+print(my_list[-1])
+# Tuples
+# Tuples cannot be modified
+my_tuple = (1,2,3,4,"banana","orange")
+# Access using index
+print(my_tuple[0])
+print(my_tuple[-1])
+# Tuples cannot be modified after creation but we can create new tuple with concatenation.
+# Dictionaries
+# It is unordered collection of key and value pair.
+my_dict ={
+    "name": "Lydia",
+    "age": 50,
+
+}
+# Accessing elements in dictionary
+print(my_dict["name"])
+# Modifying dictionary
+#Adding a key-value pairs
+my_dict["city"] = "Addis Ababa"
+print(my_dict)
+# Updating a dictionary
+my_dict ["age"] = 27
+print(my_dict)
+# Removing a key-value pair
+del my_dict["city"]
+removed_value = my_dict.pop("age")
+print(removed_value)
+print(my_dict)
+# Sets
+# A set is unordered collection of unique elements.
+# my_set = set() empty set
+my_set ={1,2,3,4,5,7}
+# Adding elements
+my_set.add(6)
+print(my_set)
+# Removing elements
+my_set.remove(3)
+my_set.discard(4)
+print(my_set)
+# set operation
+set1 = {2,4,6}
+set2 = {9,7,6}
+# union
+print(set1 | set2)
+# intersection
+print(set1 & set2)
+# difference no understanding here
+print(set1 - set2)
+# Exercise
+listOne = [1,2,3,4,5]
+listOne.append(6)
+print(listOne)
+listOne.insert(1,100)
+print(listOne)
+listOne.remove(3)
+print(listOne)
+tupleOne =[10,20,30,40]
+print(tupleOne[2:4])
+dict = {
+    "name":"Abebe",
+    "age": 34,
+    "city":"Addis Alem"
+}
+
+print(dict)
+dict ["city"] = "Los Angeles"
+dict ["country"] = "Ethiopia"
+del dict["age"]
+print(dict)
+setOne = {1,2,3}
+setOne.add(4)
+setOne.remove(2)
+print(setOne)
+
