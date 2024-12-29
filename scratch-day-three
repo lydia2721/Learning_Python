@@ -1,0 +1,109 @@
+# Classes and objects
+# Aclass is a blueprint for creating objects
+# Object is instance of a class.
+class Person:
+    def __init__(self, name, age): # It acts as a constructor for classes.
+        self.name =name # Attribute
+        self.age = age
+    def greet(self): # Method
+        print(f"Hello my name is {self.name} and I am {self.age} Years old.")
+# Create an object
+personOne = Person( "Lydia", 21)
+personOne.greet()
+class Car:
+    def __init__(self, brand, year ):
+        self.brand =brand
+        self.year = year
+
+    def display_info(self):
+        print(f"My new car is {self.brand} and it is manufactured in  {self.year}.")
+carOne = Car("Toyota", 2003)
+carOne.display_info()
+# Methods
+#They are functions created or defined in the class.
+class Calculator:
+    def add(self, a, b):
+        return a + b
+    def subtract(self,a,b):
+        return a - b
+    def multiply(self,a,b):
+        return a * b
+    def divide (self, a,b):
+        return a / b
+calc = Calculator()
+
+print(calc.add(12,45))
+print(calc.divide(4,2))
+# Inheritance
+# It allows a class or a child to inherit attributes and method from the parent element.
+class Animal:
+    def speak(self):
+        print("I am animal.")
+class Dog(Animal):
+    def speak(self):
+        print("Woof! Woof!")
+dog = Dog()
+dog.speak()
+class Vehicle:
+    def move(self):
+        print("All vehicle need a gas inorder to move")
+class Bike(Vehicle):
+    def move(self):
+        print("Bike is one type of vehicle")
+bike =Bike()
+bike.move()
+# Polymorphism
+# It allows methods in different class to have the same name but behave differently.
+class Bird:
+    def fly(self):
+        print("I can fly.")
+
+class Penguin(Bird):
+    def fly(self):  # Override
+        print("I cannot fly, but I can swim.")
+
+def describe_fly(behavior):
+    behavior.fly()
+
+sparrow = Bird()
+penguin = Penguin()
+
+describe_fly(sparrow)
+describe_fly(penguin)
+class Circle:
+    def area(self,r):
+        return (3.14 * r * r)
+class Square:
+    def area(self,s):
+        return (s * s)
+def describeArea(Area):
+    Area.area()
+
+circle = Circle()
+square = Square()
+describeArea(square)
+describeArea(circle)
+# Encapsulation restrict access to data by using private attributes
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance  # Private attribute
+
+    def deposit(self, amount):
+        self.__balance += amount
+
+    def withdraw(self, amount):
+        if amount <= self.__balance:
+            self.__balance -= amount
+        else:
+            print("Insufficient balance")
+
+    def get_balance(self):
+        return self.__balance
+
+account = BankAccount(1000)
+account.deposit(500)
+print(account.get_balance())
+account.withdraw(300)
+print(account.get_balance())
+
+
