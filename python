@@ -1,0 +1,18 @@
+# File handling in python
+# This used when we work with external data in python
+# open() used to open file
+# "r" = read default mode.
+# "W" = write
+# "a" append
+# "x" create new file
+# closing a file file.close().
+# Writing to a file
+with open("example.txt","w") as file:
+    file.write("Hello, world!\n This is a text file.")
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
+# CSV file
+# Comma separated values files store data in plain text.
+# Python have csv module is commonly used for working with these files.
+
